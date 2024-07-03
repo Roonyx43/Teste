@@ -1,0 +1,165 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    font-family: verdana;
+    background-color: rgb(10, 93, 167);
+    color: rgb(23, 172, 138);
+    text-align: center;
+    padding-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px 0 black;
+}
+
+body{
+    background-color: lightgray;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: rgb(179, 179, 179);
+    padding: 30px;
+    border-radius: 15px;
+    border: solid rgb(143, 143, 143);
+    box-shadow: 0 0 4px 0 black;
+    margin-top: 80px; /* Ajuste conforme necessário */
+    width: 60%;
+    max-width: 600px;
+}
+
+.display-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fm2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgb(179, 179, 179);
+    padding: 30px;
+    border-radius: 15px;
+    border: solid rgb(143, 143, 143);
+    box-shadow: 0 0 4px 0 black;
+}
+
+p {
+    font-weight: bold;
+}
+
+.title-cliente {
+    font-family: verdana;
+    margin-bottom: 40px;
+    color: rgb(10, 93, 167);
+}
+
+input{
+    text-align: center;
+    outline: none;
+    font-family: verdana;
+    padding: 7px;
+    padding-left: 25px;
+    padding-right: 25px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 0 1px 0;
+}
+
+label {
+    font-weight: bold;
+}
+
+
+input::placeholder{
+    text-align: center;
+}
+
+@media (max-width: 1000px) {
+
+    .formulario {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .buttons {
+        margin-left: 10px
+    }
+
+    .fm2{
+        top: 80%
+    }
+}
+
+.hidden {
+    display: none;
+}
+
+.obs {
+
+    padding-left: 80px;
+    padding-right: 80px
+}
+
+/* Adicione esse CSS ao seu arquivo style.css existente */
+
+/* Estilo para o botão "Adicionar Produto" */
+#addProductButton {
+    background-color: #4CAF50; /* Verde */
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#addProductButton:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para o botão "Remover Produto" */
+button[type="button"] {
+    background-color: #f44336; /* Vermelho */
+    border: none;
+    color: white;
+    padding: 7px 15Px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button[type="button"]:hover {
+    background-color: #da190b;
+}
+
+.checkbox-container {
+    transition: 0.8s;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: center;
+}
+
